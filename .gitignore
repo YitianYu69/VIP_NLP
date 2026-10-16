@@ -1,0 +1,8 @@
+# Large local model weights (regenerate via option_a_pipeline.ipynb Step 1)
+Notebook/models/jargon_detector/model.safetensors
+Notebook/models/jargon_detector/pytorch_model.bin
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
