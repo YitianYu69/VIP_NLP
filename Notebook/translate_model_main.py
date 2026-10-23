@@ -451,12 +451,9 @@ def main(rank, model_type, model, tokenizer, world_size, num_epochs, batch_size,
 
 
 if __name__ == '__main__':
-    token = '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' # Use your key
-    model = AutoModelForSeq2SeqLM.from_pretrained('google-t5/t5-small',
-                                                  use_auth_token=token, 
-                                                  trust_remote_code=True)
+    model = AutoModelForSeq2SeqLM.from_pretrained('google-t5/t5-small')
     #model.gradient_checkpointing_enable()
-    tokenizer = AutoTokenizer.from_pretrained('google-t5/t5-small', token=token)
+    tokenizer = AutoTokenizer.from_pretrained('google-t5/t5-small')
     #if tokenizer.pad_token is None:
         #tokenizer.add_special_tokens({'pad_token': tokenizer.eos_token})
 

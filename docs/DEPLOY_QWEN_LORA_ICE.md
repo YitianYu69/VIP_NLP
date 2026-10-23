@@ -1,6 +1,6 @@
 # Deploy a Qwen LoRA with vLLM on PACE ICE
 
-This serves a saved PEFT Qwen LoRA through vLLM on a Georgia Tech ICE GPU node. The adapter is **not in this repository**; supply its ICE path and the exact Qwen base model used for training. The job serves on node-local port 8000 for the duration of its Slurm allocation.
+This serves a saved PEFT Qwen LoRA through vLLM on a Georgia Tech ICE GPU node. The adapter is **not in this repository**; supply its ICE path and the exact Qwen base model used for training. This is a separate serving path: the repository's current Option A pipeline uses a BERT span detector and glossary lookup, not Qwen. The job serves on node-local port 8000 for the duration of its Slurm allocation.
 
 ## 1. Check the adapter and environment
 
