@@ -40,5 +40,5 @@ python run_option_a.py --file sentences.txt
 
 - Detector metrics (held-out test): span F1 ≈ **0.89**
 - Unknown detected terms return `"translation": null` and `"known": false`
-- The large model weights are kept local by default; retrain/save from the notebook if missing
+- The BERT detector weights are ignored by Git and are absent from a fresh clone; obtain the saved weights or retrain/save from the notebook before using the runner
 - Older sentence-classification / full-sentence rewrite notebooks remain for baselines only
