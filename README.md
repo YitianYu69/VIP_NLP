@@ -42,3 +42,7 @@ python run_option_a.py --file sentences.txt
 - Unknown detected terms return `"translation": null` and `"known": false`
 - The large model weights are kept local by default; retrain/save from the notebook if missing
 - Older sentence-classification / full-sentence rewrite notebooks remain for baselines only
+
+## Qwen LoRA deployment
+
+If you have a separately trained Qwen PEFT adapter, see [Deploy a Qwen LoRA with vLLM on PACE ICE](docs/DEPLOY_QWEN_LORA_ICE.md). The adapter and base-model ID are not stored in this repository.
