@@ -42,3 +42,7 @@ python run_option_a.py --file sentences.txt
 - Unknown detected terms return `"translation": null` and `"known": false`
 - The large model weights are kept local by default; retrain/save from the notebook if missing
 - Older sentence-classification / full-sentence rewrite notebooks remain for baselines only
+
+## Deployment notes
+
+The current pipeline uses a BERT span detector and glossary lookup; this repository does not contain a Qwen LoRA adapter. For a separately trained adapter, see the [Qwen LoRA and vLLM deployment guide](docs/DEPLOY_QWEN_LORA_ICE.md). Read its ICE usage restriction before running a model there.
