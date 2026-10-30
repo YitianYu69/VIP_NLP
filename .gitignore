@@ -6,3 +6,6 @@ Notebook/models/jargon_detector/pytorch_model.bin
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# TensorRT build outputs (ONNX files and engines are large and GPU-specific)
+Notebook/tensorrt/build/
