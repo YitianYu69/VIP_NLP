@@ -42,3 +42,7 @@ python run_option_a.py --file sentences.txt
 - Unknown detected terms return `"translation": null` and `"known": false`
 - The BERT detector weights are ignored by Git and are absent from a fresh clone; obtain the saved weights or retrain/save from the notebook before using the runner
 - Older sentence-classification / full-sentence rewrite notebooks remain for baselines only
+
+## Deployment notes
+
+The current pipeline uses a BERT span detector and glossary lookup; this repository does not contain a Qwen LoRA adapter. For a separately trained adapter, see the [Qwen LoRA and vLLM deployment guide](docs/DEPLOY_QWEN_LORA_ICE.md). Read its ICE usage restriction before running a model there.
